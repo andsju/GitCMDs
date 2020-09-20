@@ -1,50 +1,63 @@
 # Git kommandon
+Gudien förutsätter att du har installerat programvaran Git.
+___
+### Skapa ett nytt repo
+I din dator:
+* Skapa en ny mapp
+* Öppna mappen  
 
-
-## Nytt repo
-
-##### Remote
-Skapa ett nytt repo på github.com. Exempel, ett repo med namnet "GitCMDs".
-När ett repo är skapat finns en remote referens som kan anges lokalt i din dator. 
-Exempel:
-
-`git remote add origin https://github.com/andsju/GitCMDs.git`
-
-##### Local
-Skapa en ny mapp för ditt repo i din dator. Tips är att använda samma namn som det repo du skapat på GitHub. 
-
-Förbered mappen för versionshantering:
+Ange kommandot
 
 ```javascript
 git init
 ```
-Lägg till det repo som ska finnas på GitHub  
+Nu har du skapat ett lokalt **git repo**. En dold mapp med namnet  __.git__ bevakar innehållet i mappen. 
+
+___
+
+
+### Koppla ett lokalt repo till en server 
+
 ```javascript
-git remote add origin https://github.com/andsju/GitCMDs.git
+git remote add origin <server>
 ```
+___
 
 
-Skapa en fil i mappen så att den kan versionhanteras. Exempelvis en fil med namnet "index.html". Lägg till filen i Git:
+### Klona ett repo
+Skapa en kopia av ett repo med kommandot:
+```javascript
+git clone <server>
+```
+___
+
+
+### Lägg till innehåll
+
+Skapa en ny fil i ditt lokala git repo.
+Lägg till filen i versionshantering:
 
 ```javascript
 git add index.html
 ```
 
-För att lägga till flera filera nvnder du en punkt:
+För att lägga till alla filer i mappen ange en punkt:
 
 ```javascript
 git add .
 ```
 
-När du redigerat din fil använder du kommandot git commit för att markera den redo för att visas i molnet. Med växeln -m anger du en kort förklaring på förändring,
+När filen (filer) lagts till (redigerats) ska förändringar markeras som redo för överföring. Det görs med kommandot commit, där växeln -m beskriver förändringen.
 
 ```javascript
 git commit -m "First commit"
 ```
 
-Visa din lokala version i molnet:
+### Skicka innehåll till server
+Skicka innehållet som finns din lokala version med kommandot push
 ```javascript
 git push origin master
 ```
+___
 
-
+## Exempel på arbetsgångar
