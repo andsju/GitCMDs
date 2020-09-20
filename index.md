@@ -6,7 +6,7 @@ Versionshantering med Git hanteras i 3 olika referenser. I din lokala mapp **Wor
 
 När *Local repository* och *Remote repository* är överensstämmande har du en identiskt kopia.
 
-![Git staging](git-illustration-1.png)
+![Git staging](https://andsju.github.io/GitCMDs/git-illustration-1.png)
 ___
 ### Skapa ett nytt repo
 I din dator:
