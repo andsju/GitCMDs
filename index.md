@@ -60,4 +60,51 @@ git push origin master
 ```
 ___
 
+### Skapa en ny branch
+I Git är **master** den branch som allt utgår ifrån. Att lägga till en branch är ett sätt som möjliggör en eventuell förändring. Förändringen kan senare integreras (mergas) med master.
+
+För att skapa en ny branch anges ett namn, ex fix1 
+```javascript
+git branch fix1
+```
+En branch aktiveras med checkout:
+```javascript
+git checkout fix1
+```
+Visa branches med 
+```javascript
+git branch
+```
+
+
 ## Exempel på arbetsgångar
+Klona ett repo, lägg till branch, pusha branch, gör en pull request 
+repo: https://github.com/andsju/GitCMDs
+
+### Steg 1 
+Skapa lokal mapp och klona repot så att du har en lokal arbetskopia
+
+```javascript
+git clone https://github.com/andsju/GitCMDs
+```
+Kontrollera att status är korrekt, att du är i rätt mapp
+```javascript
+git status
+```
+
+Skapa branch 'perhaps'
+```javascript
+git branch perhaps
+```
+Växla till branch 'perhaps'
+
+```javascript
+git checkout perhaps
+```
+Lägg till en fil, ex 'headings.md', beskriv förändringen och pusha till repot
+```javascript
+git add headings.md
+git commit -m "Added file headings.md"
+git push -u origin perhaps
+```
+Gå till det GitHub repo dit branchen pushades
