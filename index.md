@@ -1,5 +1,12 @@
 # Git kommandon
 Gudien förutsätter att du har installerat programvaran Git (git-scm.com). I exemplet används sajten GitHub.com, och för exempel på kod i guiden används repo: https://github.com/andsju/Example.
+GitHub page https://andsju.github.io/Example/
+
+Versionshantering med Git hanteras i 3 olika referenser. I din lokala mapp **Working directory** finns filer och mappar, **Index** refererar till ngt som är förberett för en förändring. Den tredje referensen är **Local repository** (**Head**). Den pekar på den senaste slutgiltiga förändringen. 
+
+När *Local repository* och *Remote repository* är överensstämmande har du en identiskt kopia.
+
+![Git staging](git-illustration-1.png)
 ___
 ### Skapa ett nytt repo
 I din dator:
