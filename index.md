@@ -1,13 +1,17 @@
 # Git kommandon
 Gudien förutsätter att du har installerat programvaran Git (git-scm.com). I exemplet används sajten GitHub.com, och för exempel på kod i guiden används repo: https://github.com/andsju/Example.
-GitHub page https://andsju.github.io/Example/
 
-Versionshantering med Git hanteras i 3 olika referenser. I din lokala mapp **Working directory** finns filer och mappar, **Index** refererar till ngt som är förberett för en förändring. Den tredje referensen är **Local repository** (**Head**). Den pekar på den senaste slutgiltiga förändringen. 
+GitHub https://andsju.github.io/GitCMDs/
+
+Versionshantering med Git hanteras i 3 olika referenser. I din lokala mapp **Working directory** finns filer och mappar, **Staging area | Index** refererar till ngt som är förberett för en förändring. Den tredje referensen är **Local repository** (**Head**). Den pekar på den senaste slutgiltiga förändringen. 
 
 När *Local repository* och *Remote repository* är överensstämmande har du en identiskt kopia.
+___
 
 ![Git staging](https://andsju.github.io/GitCMDs/git-illustration-1.png)
+
 ___
+
 ### Skapa ett nytt repo
 I din dator:
 * Skapa en ny mapp
@@ -108,8 +112,22 @@ git branch
 ```
 ___
 
+### Slå ihop (merga) en branch med en annan
+Välj den branch som ska förändras. En branch slås ihop med kommandot *git merge*.
+```markdown
+git checkout master
+git merge fix1
+```
+___
+
+
 ### Hämta förändringar från remote server
-Förändringar som finns hämtas med *git pull*: 
+Förändringar som finns visas med *git fetch*. För att merga det innehåll som finns på en remote server används *git pull*. 
+```md
+git fetch
+```
+
+Nytt innehåll hämtas med kommandot *git pull*. Git slår ihop  innehållen direkt.  
 ```md
 git pull
 ```
