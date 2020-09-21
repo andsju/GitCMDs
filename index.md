@@ -6,6 +6,7 @@ GitHub https://andsju.github.io/GitCMDs/
 Versionshantering med Git hanteras i 3 olika referenser. I din lokala mapp **Working directory** finns filer och mappar, **Staging area | Index** refererar till ngt som är förberett för en förändring. Den tredje referensen är **Local repository** (**Head**). Den pekar på den senaste slutgiltiga förändringen. 
 
 När *Local repository* och *Remote repository* är överensstämmande har du en identiskt kopia.
+
 ___
 
 ![Git staging](https://andsju.github.io/GitCMDs/git-illustration-1.png)
