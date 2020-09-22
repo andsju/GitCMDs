@@ -136,6 +136,19 @@ git merge fix1
 ```
 ___
 
+### Ta bort en branch
+En branch som finns lokalt tas bort med kommandot *git branch -d [name]*.
+
+```markdown
+git branch -d fix1
+```
+En branch som finns i ett remote repo tas bort med kommandot *git push [remote] --delete [branch]*.
+
+```markdown
+git push origin --delete branch fix1
+```
+___
+
 ### Hämta förändringar från remote server
 Förändringar mellan remote och local repo visas med *git fetch*.  
 
@@ -143,7 +156,7 @@ Förändringar mellan remote och local repo visas med *git fetch*.
 git fetch
 ```
 
-För att hämta det innehåll som finns på en remote server till ett lokalt repo används *git pull*. Git slår ihop innehållet. Finns en konflikt visas ett meddelande som hanteras manuellt.
+För att hämta det innehåll som finns på en remote server till ett lokalt repo används *git pull*. Git slår ihop innehållet. Finns en konflikt visas ett meddelande som får hanteras manuellt.
 
 ```md
 git pull
