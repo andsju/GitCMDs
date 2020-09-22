@@ -3,8 +3,8 @@ Gudien förutsätter att du har installerat programvaran Git (git-scm.com). I ex
 
 Versionshantering med Git hanteras i 3 olika referenser i en dator. 
 * I den mapp som Git bevakar - **Working directory** - finns filer och mappar.
-* **Staging area | Index** refererar till ngt som är förberett för en förändring. Det är filer och mappar som valts ut med kommandot *git add* 
-* Den tredje referensen är **Local repository** | **Head**. Den pekar på den senaste slutgiltiga förändringen. Det är filer som markerats med kommandot *git commit*
+* **Staging area (Index)** refererar till ngt som är förberett för en förändring. Det är filer och mappar som valts ut med kommandot *git add* 
+* Den tredje referensen är **Local repository** (**Head**). Den pekar på den senaste slutgiltiga förändringen. Det är filer som markerats med kommandot *git commit*
 
 Det som nu finns i *Local repository* kan skickas till ett *Remote repository* med kommandot *git push*. Då finns en identisk kopia i molnet.
 
