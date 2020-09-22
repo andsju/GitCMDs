@@ -68,7 +68,7 @@ När filen skapats kan du ange att filen ska inkluderas i en versionshantering m
 git add about.txt
 ```
 
-(För att lägga till flera filer som skapats | förändrats, ange en punkt efter kommandot: *git add .*)
+(För att lägga till flera filer som skapats eller förändrats, ange en punkt efter kommandot: *git add .*)
 
 ```markdown
 git add .
