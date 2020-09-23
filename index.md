@@ -1,5 +1,5 @@
 # Git guide
-Gudien förutsätter att du har installerat programvaran Git (git-scm.com). I exemplet används sajten GitHub.com, och för exempel på kod i guiden används ett repository: https://github.com/andsju/Example.
+Gudien förutsätter att du har installerat programvaran Git (git-scm.com). I exemplet används sajten GitHub.com, och som exempel på repository: https://github.com/andsju/Example.
 
 Versionshantering med Git hanteras i 3 olika referenser i en dator. 
 * I den mapp som Git bevakar - **Working directory** - finns filer och mappar.
@@ -19,12 +19,12 @@ I din dator:
 * Skapa en ny mapp
 * Öppna mappen  
 
-Ange kommandot *git init*
+Ange kommandot *git init* för att initiera möjligheten för att hantera filer och mappar.
 
 ```markdown
 git init
 ```
-Nu har du skapat ett lokalt **git repo**. En dold mapp med namnet  __.git__ bevakar innehållet i mappen. 
+Nu kan filer läggas till i ett lokalt **git repository**. En dold mapp med namnet  __.git__ bevakar innehållet i mappen. 
 ___
 
 ### Visa aktuell status för ett repo
@@ -50,6 +50,7 @@ ___
 
 ### Klona ett repo
 Att skapa en kopia av ett repo utförs med kommandot *git clone*:
+
 ```markdown
 git clone <server>
 
@@ -59,7 +60,7 @@ git clone https://github.com/andsju/Example
 ___
 
 
-### Lägg till innehåll
+### Lägg till en fil
 Skapa en ny fil i ditt lokala git repo, ex *about.txt*
 
 När filen skapats kan du ange att filen ska inkluderas i en versionshantering med kommandot *git add*
@@ -68,7 +69,7 @@ När filen skapats kan du ange att filen ska inkluderas i en versionshantering m
 git add about.txt
 ```
 
-(För att lägga till flera filer som skapats eller förändrats, ange en punkt efter kommandot: *git add .*)
+För att lägga till flera filer samtidigt, kan en punkt anges efter kommandot: *git add .*
 
 ```markdown
 git add .
@@ -78,6 +79,29 @@ När filen (filer) lagts till (redigerats) ska förändringar markeras som klara
 
 ```markdown
 git commit -m "First commit"
+```
+___
+
+### Ta bort en fil
+För att ta bort en fil som lagts till i ett lokalt repo används kommandot *git rm --cached*. 
+
+```markdown
+git rm --cached file1.txt 
+```
+
+För att ta bort filen från ett lokalt repo **och filsystemet**:
+
+```markdown
+git rm file1.txt 
+```
+___
+
+### Ta bort en katalog
+
+För att ta bort en katalog från ett lokalt repo:
+
+```markdown
+git rm -r folder1 
 ```
 ___
 
@@ -168,7 +192,7 @@ ___
 
 
 #### Steg 1 
-Skapa en lokal mapp som du kan arbeta i. Öppna mappen.
+Skapa en lokal mapp som du kan arbeta i, och därefter mappen.
 
 #### Steg 2 
 Klona aktuellt repo så att du har en lokal arbetskopia.
@@ -180,7 +204,7 @@ Kontrollera att status är korrekt.
 ```markdown
 git status
 ```
-(Visas en annan status, kontrollera att du arbetat i rätt mapp. Du kan byta mapp med kommandon cd, *change directory*)
+(Visas en annan status, kontrollera att du är i rätt mapp. Du kan byta mapp med kommandon cd, *change directory*)
 
 Skapa en ny branch, ex med namnet '*feature1*'
 ```markdown
