@@ -24,7 +24,8 @@ Ange kommandot *git init* för att initiera möjligheten för att hantera filer 
 ```markdown
 git init
 ```
-Nu kan filer läggas till i ett lokalt **git repository**. En dold mapp med namnet  __.git__ bevakar innehållet i mappen. 
+Nu kan filer läggas till i ett lokalt **git repository**. En dold mapp med namnet  **.git** bevakar innehållet i mappen.
+
 ___
 
 ### Visa aktuell status för ett repo
